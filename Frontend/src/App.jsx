@@ -161,6 +161,42 @@ export default function App() {
     return (
       <div className="min-h-screen bg-grayish p-6">
         <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+          {/* HEADER CON USUARIO Y LOGOUT */}
+          <div className="mb-6 flex items-center justify-between border-b border-pink-200 pb-4">
+            <div>
+              <h1 className="text-2xl font-bold text-pink-600">Mis Tareas</h1>
+              <p className="text-sm text-gray-600">Usuario: <strong>{user}</strong></p>
+            </div>
+            <button
+              onClick={handleLogout}
+              className="px-4 py-2 bg-rose-400 text-white rounded-lg hover:bg-rose-500 transition"
+            >
+              Cerrar sesión
+            </button>
+          </div>
+
+          {/* FILTROS */}
+          <div className="mb-4 flex gap-3 bg-pink-50 p-4 rounded-xl">
+            <input
+              type="text"
+              placeholder="Buscar tareas..."
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              className="flex-1 p-2 rounded-lg border border-pink-200
+                         focus:outline-none focus:ring-2 focus:ring-pink-300"
+            />
+            <select
+              value={filterBy}
+              onChange={(e) => setFilterBy(e.target.value)}
+              className="p-2 rounded-lg border border-pink-200
+                         focus:outline-none focus:ring-2 focus:ring-pink-300"
+            >
+              <option value="any">Todas</option>
+              <option value="completed">Completadas</option>
+              <option value="pending">Pendientes</option>
+            </select>
+          </div>
+
           <TodoForm
             onAdd={addTask}
             currentUser={user}
