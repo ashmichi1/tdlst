@@ -100,10 +100,6 @@ Crea un archivo `.env` en la raíz del proyecto (si es necesario):
 VITE_API_URL=tu_url_de_api
 ```
 
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Para contribuir:
-
 1. Fork el proyecto
 2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
 3. Commit tus cambios (`git commit -m 'Add: nueva característica'`)
@@ -122,12 +118,3 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 - Repositorio Frontend: [todo-list](https://github.com/ashmichi1/todo-list)
 - Repositorio Completo: [tdlst](https://github.com/ashmichi1/tdlst)
 
-## 🙏 Agradecimientos
-
-- A la comunidad de React
-- A los desarrolladores de Tailwind CSS
-- A todos los contribuidores
-
----
-
-⭐️ Si te gusta este proyecto, ¡dale una estrella en GitHub!
